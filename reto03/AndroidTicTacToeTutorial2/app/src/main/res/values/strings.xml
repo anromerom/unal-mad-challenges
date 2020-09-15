@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"> Reto 03 - TicTacToe</string>
+    <string name="first_human"> Empiezas tú.</string>
+    <string name="turn_human"> Tu turno.</string>
+    <string name="turn_computer"> Le toca a Android.</string>
+    <string name="result_tie"> Es un empate.</string>
+    <string name="result_human_wins">¡Has ganado!</string>
+    <string name="result_computer_wins"> ¡Has perdido!</string>
+    <string name="new_game">Nuevo juego</string>
+</resources>
