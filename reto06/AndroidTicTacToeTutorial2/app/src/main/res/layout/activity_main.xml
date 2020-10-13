@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimaryDark">
+
+    <co.edu.unal.tictactoe.BoardView
+        android:id="@+id/board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"/>
+
+     <TextView android:id="@+id/information"    	           	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"    			android:text="info"
+            android:gravity="center_horizontal" 		      android:layout_marginTop="20dp"
+            android:textSize="40dp"
+            android:textColor="@color/colorAccent"/>
+        <TextView android:id="@+id/humanwins"    	           	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"    			android:text="info"
+            android:gravity="center_horizontal" 		      android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorText"/>
+        <TextView android:id="@+id/computerwins"    	           	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"    			android:text="info"
+            android:gravity="center_horizontal" 		      android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorText"/>
+        <TextView android:id="@+id/ties"    	           	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"    			android:text="info"
+            android:gravity="center_horizontal" 		      android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorText"/>
+
+
+
+
+
+
+
+</LinearLayout>

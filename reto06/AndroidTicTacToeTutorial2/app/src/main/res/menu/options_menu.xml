@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_game"
+        android:title="@string/new_game"/>
+    <item android:id="@+id/settings_menu"
+        android:title="@string/settings"/>
+    <item android:id="@+id/quit"
+        android:title="@string/quit"/>
+    <item android:id="@+id/about"
+        android:title="@string/about"/>
+</menu>
