@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
         MODE = getIntent().getStringExtra("mode");
 
         if(MODE == null || MODE.equals("SINGLEPLAYER")){
-            mGame = new TicTacToeMultiplayer();
+            mGame = new TicTacToeSinglePlayer();
         }else if (MODE.equals("MULTIPLAYER")){
             mGame = new TicTacToeMultiplayer();
             ROLE = getIntent().getStringExtra("role");
@@ -261,13 +261,13 @@ public class MainActivity extends AppCompatActivity {
 
         mGame.clearBoard();
         mBoardView.invalidate();
-        if(ROLE.equals("OWNER")){
-            humanTurn = false;
-            mInfoTextView.setText(R.string.turn_computer);
-
-        } else {
+        if(ROLE == null || ROLE.equals("GUEST")){
             humanTurn = true;
             mInfoTextView.setText(R.string.first_human);
+
+        } else {
+            humanTurn = false;
+            mInfoTextView.setText(R.string.turn_computer);
         }
         mGameOver = false;
 
@@ -308,13 +308,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (mGame.setMove(player, move)) {
             mBoardView.invalidate();   // Redraw the board
-            if(humanTurn){
-                if(mSoundOn) mHumanMediaPlayer.start();
+            if(humanTurn) {
+                if (mSoundOn) mHumanMediaPlayer.start();
+
+                if (MODE.equals("MULTIPLAYER")){
                 match.setLastmove(move);
                 match.setTurn(match.getTurn() + 1);
                 match.setOwnerPlaying(!match.isOwnerPlaying());
                 DatabaseReference matchRef = FirebaseDatabase.getInstance().getReference("matches").child(REF_ID);
                 matchRef.setValue(match);
+                }
             }
             else
                 if(mSoundOn) mComputerMediaPlayer.start();
@@ -376,8 +379,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("matches").child(REF_ID);
-        mRef.removeValue();
+
+        if(MODE == "MULTIPLAYER"){
+            DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("matches").child(REF_ID);
+            mRef.removeValue();
+        }
 
     }
 
