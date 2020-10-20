@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name"> Reto 07 - TicTacToe (Multijugador)</string>
+    <string name="first_human"> Empiezas tú.</string>
+    <string name="turn_human"> Tu turno.</string>
+    <string name="turn_computer"> Le toca a Android.</string>
+    <string name="result_tie"> Es un empate.</string>
+    <string name="result_human_wins">¡Has ganado!</string>
+    <string name="result_computer_wins"> ¡Has perdido!</string>
+    <string name="new_game">Nuevo juego</string>
+    <string name="human_count">Jugador: %1$d</string>
+    <string name="android_count">Android: %1$d</string>
+    <string name="ties_count">Empates: %1$d</string>
+    <string name="difficulty_easy">Fácil</string>
+    <string name="difficulty_harder">Difícil</string>
+    <string name="difficulty_expert">Experto</string>
+    <string name="difficulty_choose"> Elija un nivel de dificultad. </string>
+    <string name="quit_question">"¿Está seguro de que quiere salir?"</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="quit">Salir</string>
+    <string name="difficulty">Dificultad</string>
+    <string name="about">Acerca de</string>
+    <string name="course">Desarrollo de aplicaciones para dispositivos moviles (2020–3)</string>
+    <string name="my_image_description">Logo</string>
+    <string name="student">Nicolai Romero</string>
+    <string name="author">Adaptado de Frank McCown</string>
+    <string name="settings">Configuración</string>
+    <string name="difficulty_level">Nivel de dificultad</string>
+    <string name="board_color">Color del tablero</string>
+    <string name="victory_message">Mensaje de victoria</string>
+    <string name="sound">Sonido</string>
+    <string name="sound_summary">Habilita o deshabilita el sonido.</string>
+    <string name="title_activity_select">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>
