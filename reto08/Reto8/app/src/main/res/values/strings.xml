@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Reto8</string>
+    <string name="hint_contact_name">Nombre del contacto…</string>
+    <string name="button_save">Guardar</string>
+    <string name="empty_not_saved">Los datos no son válidos.</string>
+    <string name="add_contact">Añadir contacto</string>
+    <string name="hint_contact_url">URL del contacto...</string>
+    <string name="hint_contact_phone">Teléfono del contacto</string>
+    <string name="hint_contact_email">Email del contacto</string>
+    <string name="hint_contact_products">Descripción de productos y servicios.</string>
+    <string name="hint_contact_type">Clasificación de la empresa.</string>
+    <string name="delete_contact_message">¿Está seguro que desea eliminar el contacto?</string>
+    <string name="yes">Sí, borrar</string>
+    <string name="no">No, conservar</string>
+    <string-array name="types">
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fábrica de software</item>
+    </string-array>
+    <string-array name="all_types">
+        <item>Todos</item>
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fábrica de software</item>
+    </string-array>
+
+</resources>
