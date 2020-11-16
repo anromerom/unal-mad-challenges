@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Reto 09 - Usando el GPS </string>
+    <string name="title_activity_maps">Google Map </string>
+    <string name="default_info_title">Bogotá D.C. </string>
+    <string name="default_info_snippet">Debe habilitar la ubicación para acceder a los sitios cercanos. </string>
+    <string name="option_get_place"> Obtener sitio </string>
+    <string name="pick_place">Elija un sitio. </string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="maps_api_key">YOUR_KEY_HERE</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Opciones</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="radius_title">Radio de búsqueda</string>
+    <string name="radius_descr">Modifique el radio efectivo de búsqueda.</string>
+    <string name="option_settings">Opciones</string>
+    <string name="is_an_invalid_number">El número ingresado no es válido</string>
+
+</resources>
