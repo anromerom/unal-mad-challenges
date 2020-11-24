@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ParamsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Búsqueda"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el texto a buscar"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Autoridad ambiental"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <EditText
+            android:id="@+id/authority_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Autoridad ambiental"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Nombre de la estación"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <EditText
+            android:id="@+id/station_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la estación"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Departamento"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <EditText
+            android:id="@+id/department_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Departamento"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Municipio"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <EditText
+            android:id="@+id/town_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Municipio"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Variable"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <EditText
+            android:id="@+id/variable_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Variable"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Límite"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/limit_slider"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:valueFrom = '1'
+            android:valueTo = '25'
+            android:stepSize="1"
+            android:value="5"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_baseline_done_24"/>
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
